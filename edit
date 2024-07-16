@@ -1,0 +1,29 @@
+dic = {"fish":500,"biriyani":50,"sss idly":150}
+a=input("Do you want edit menu : ")
+
+if a =="yes":
+    b=int(input("Do you want add new items : "))
+    if b=="yes":
+        c=int(input("Enter how many dishesh do you want add : "))
+        for d in range(c):
+            e = input("Enter dishe name : ")
+            f = int(input("Enter the cost of the dishe : "))
+            dic.update({e,f})
+    print(dic)
+    else:
+        g=input("Do you want change the item : ")
+        if g=="yes":
+            h=int(input("How many items do you want change : "))
+            for i in range(h):
+                k=input("Enter the dishe name : ")
+                l=input("Enter the dishe cost : ")
+                dic[k]=v
+        else:
+            print(dic)
+else:
+    print(dic)
+            
+            
+        
+        
+            
