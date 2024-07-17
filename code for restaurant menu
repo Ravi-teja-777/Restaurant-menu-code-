@@ -1,0 +1,49 @@
+dic = {"fish":500,"biriyani":50,"sss idly":150}
+a=input("Do you want edit menu : ")
+
+if a =="yes":
+    b=input("\nDo you want add new items : ")
+    if b=="yes":
+        c=int(input("\nEnter how many dishesh do you want add : "))
+        for d in range(c):
+            e = input("Enter dishe name : ")
+            f = input("Enter the cost of the dishe : ")
+            dic.update({e:f})
+            print("")
+    for x,y in dic.items():
+        print(x, ":",y)
+    g=input("\nDo you want change menu : ")
+    if g=="yes":
+        h=int(input("How many items do you want change : "))
+        for k in range(h):
+            l=input("Enter the dishe name : ")
+            m=input("Enter the dishe value : ")
+            dic[l]=m
+            print("")
+    for x,y in dic.items():
+        print(x, ":",y)
+else:
+    print(" ")
+    for x,y in dic.items():
+        print(x, ":",y)
+    
+total=0        
+dic1={}
+bill="0"
+print("\nPress 1 to get bill  ")
+print("")
+while bill!="1":
+        n=input("Enter the dishe name : ")
+        dic1.update({n:dic[n]})
+        value=dic[n]
+        total=total+int(value)
+        bill=input()
+        
+print("\nYour order details ")
+for o,p in dic1.items():
+    print(o,":",p)
+print("Total bill is : ",total)    
+            
+        
+        
+            
