@@ -42,8 +42,33 @@ while bill!="1":
 print("\nYour order details ")
 for o,p in dic1.items():
     print(o,":",p)
-print("Total bill is : ",total)    
-            
-        
-        
+print("Total bill is : ",total)   
+
+t=int(input("Enter GST% : "))
+dis=int(input("Enter discount% : "))
+val=(total*t)/100
+disc=(total*dis)/100
+total=total-disc
+total=total+val
+
+print("After adding GST and Discount the total bill is : ",total)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
